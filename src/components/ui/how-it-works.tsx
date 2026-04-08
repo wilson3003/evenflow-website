@@ -86,6 +86,7 @@ export function HowItWorks() {
     (async () => {
       const cal = await getCalApi({ namespace: "30min" });
       cal("ui", {
+        // @ts-expect-error cal typing incomplete
         cssVarsPerTheme: {
           light: {
             "cal-brand":          "#09D9A0",
