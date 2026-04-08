@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FAFAF7"/>
+  <!-- Subtle mesh gradient blobs -->
+  <ellipse cx="200" cy="150" rx="400" ry="300" fill="#09D9A0" opacity="0.08"/>
+  <ellipse cx="1000" cy="480" rx="350" ry="250" fill="#09D9A0" opacity="0.06"/>
+  <ellipse cx="600" cy="600" rx="500" ry="200" fill="#c040a0" opacity="0.04"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(80, 60)">
+    <path d="M5,20 C30,-8 50,-8 60,20 C70,48 90,48 115,20" stroke="#141210" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M5,20 C30,48 50,48 60,20 C70,-8 90,-8 115,20" stroke="#09D9A0" stroke-width="2" fill="none" opacity="0.85" stroke-linecap="round"/>
+  </g>
+
+  <!-- Even Flow wordmark -->
+  <text x="220" y="98" font-family="Georgia, serif" font-size="36" font-weight="600" letter-spacing="-1" fill="#141210">Even <tspan fill="#09D9A0">Flow</tspan></text>
+
+  <!-- Main headline -->
+  <text x="80" y="280" font-family="Georgia, serif" font-size="88" font-weight="300" font-style="italic" letter-spacing="-3" fill="#141210">Your emails.</text>
+  <text x="80" y="375" font-family="Georgia, serif" font-size="88" font-weight="300" font-style="italic" letter-spacing="-3" fill="#141210">Your voice.</text>
+  <text x="80" y="475" font-family="Arial Black, sans-serif" font-size="96" font-weight="700" letter-spacing="-4" fill="#141210">Handled.</text>
+
+  <!-- URL -->
+  <text x="80" y="575" font-family="monospace" font-size="18" letter-spacing="2" fill="rgba(20,18,16,0.35)">evenflow.agency</text>
+
+  <!-- Right side accent -->
+  <rect x="1080" y="0" width="120" height="630" fill="#141210" opacity="0.03"/>
+</svg>

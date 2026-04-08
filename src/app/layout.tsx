@@ -2,8 +2,34 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Even Flow — Email Marketing for Shopify Brands",
+  title: "Even Flow — Email Marketing for Brands",
   description: "Your emails. Your voice. Handled.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
+  openGraph: {
+    title: "Even Flow — Email Marketing for Brands",
+    description: "One conversation. Your entire email programme — built, scheduled, and selling.",
+    url: "https://evenflow.agency",
+    siteName: "Even Flow",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Even Flow — Email Marketing for Brands",
+      },
+    ],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Even Flow — Email Marketing for Brands",
+    description: "One conversation. Your entire email programme — built, scheduled, and selling.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
