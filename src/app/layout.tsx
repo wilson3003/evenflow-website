@@ -1,12 +1,20 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Even Flow — Email Marketing for Brands",
-  description: "Your emails. Your voice. Handled.",
+  description: "AI-native email marketing agency for ecommerce brands. Klaviyo specialists. One conversation, your entire email programme — built, scheduled, and selling.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
+  },
+  alternates: {
+    canonical: "https://evenflow.agency",
   },
   openGraph: {
     title: "Even Flow — Email Marketing for Brands",

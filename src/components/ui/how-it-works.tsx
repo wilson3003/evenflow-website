@@ -109,13 +109,13 @@ export function HowItWorks() {
   return (
     <>
       {/* ── 1. How it works ──────────────────────────────────────── */}
-      <section id="how" style={{ padding: "120px 0 140px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
+      <section id="how" className="ef-section-how" style={{ padding: "120px 0 140px" }}>
+        <div className="ef-section-inner" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
 
           {/* Section header — naked on the gradient */}
           <div style={{ marginBottom: "64px" }}>
             {label("How it works")}
-            <h2 style={{
+            <h2 className="ef-section-h2" style={{
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: 300,
               fontStyle: "italic",
@@ -145,6 +145,7 @@ export function HowItWorks() {
               return (
                 <div
                   key={step.num}
+                  className="ef-accordion-card"
                   onClick={() => setOpen(isOpen ? null : i)}
                   style={{
                     background: isOpen ? GLASS_OPEN : GLASS,
@@ -210,9 +211,9 @@ export function HowItWorks() {
       </section>
 
       {/* ── 2. Stats — 3 individual frosted cards ────────────────── */}
-      <section style={{ padding: "0 0 120px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
+      <section className="ef-section-stats" style={{ padding: "0 0 120px" }}>
+        <div className="ef-section-inner" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
+          <div className="ef-stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
             {stats.map((item) => (
               <div
                 key={item.stat}
@@ -228,7 +229,7 @@ export function HowItWorks() {
                   gap: "12px",
                 }}
               >
-                <p style={{
+                <p className="ef-stat-value" style={{
                   fontFamily: "var(--font-clash)",
                   fontWeight: 700,
                   fontSize: "56px",
@@ -252,13 +253,13 @@ export function HowItWorks() {
       </section>
 
       {/* ── 3. What's included — 2 frosted cards side by side ─────── */}
-      <section style={{ padding: "0 0 120px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
+      <section className="ef-section-included" style={{ padding: "0 0 120px" }}>
+        <div className="ef-section-inner" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
 
           {/* Section header — naked on gradient */}
           <div style={{ marginBottom: "64px" }}>
             {label("What's included")}
-            <h2 style={{
+            <h2 className="ef-section-h2-sm" style={{
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: 300,
               fontStyle: "italic",
@@ -270,7 +271,7 @@ export function HowItWorks() {
             }}>Everything you need.<br />Nothing you don't.</h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", alignItems: "stretch" }}>
+          <div className="ef-included-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", alignItems: "stretch" }}>
 
             {/* Left card — included list */}
             <div style={{
@@ -343,13 +344,13 @@ export function HowItWorks() {
       </section>
 
       {/* ── 4. Book a call ───────────────────────────────────────── */}
-      <section id="book" style={{ padding: "0 0 140px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
+      <section id="book" className="ef-section-book" style={{ padding: "0 0 140px" }}>
+        <div className="ef-section-inner" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 48px" }}>
 
           {/* Header — naked on gradient */}
           <div style={{ textAlign: "center" as const, maxWidth: "600px", margin: "0 auto 64px" }}>
             {label("Get started")}
-            <h2 style={{
+            <h2 className="ef-book-h2" style={{
               fontFamily: "Cormorant Garamond, serif",
               fontWeight: 300,
               fontStyle: "italic",
@@ -387,6 +388,7 @@ export function HowItWorks() {
               href="https://cal.com/evenflow/30min"
               target="_blank"
               rel="noopener noreferrer"
+              className="ef-book-cta"
               style={{
                 fontFamily: "var(--font-dm-mono)",
                 fontSize: "11px",
@@ -408,7 +410,7 @@ export function HowItWorks() {
           </div>
 
           {/* Cal embed in its own frosted card */}
-          <div style={{
+          <div className="ef-cal-card" style={{
             background: GLASS,
             backdropFilter: "blur(16px)",
             WebkitBackdropFilter: "blur(16px)",
@@ -429,9 +431,9 @@ export function HowItWorks() {
       </section>
 
       {/* ── 5. Footer ────────────────────────────────────────────── */}
-      <footer style={{ background: INK, borderTop: "1px solid rgba(255,255,255,0.06)", padding: "48px" }}>
+      <footer className="ef-footer" style={{ background: INK, borderTop: "1px solid rgba(255,255,255,0.06)", padding: "48px" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "32px" }}>
+          <div className="ef-footer-top" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "32px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               <svg width="72" height="28" viewBox="-4 -12 128 64" fill="none">
                 <path d="M5,20 C30,-8 50,-8 60,20 C70,48 90,48 115,20" stroke="#FAFAF7" strokeWidth="2.6" fill="none" strokeLinecap="round"/>
@@ -467,7 +469,7 @@ export function HowItWorks() {
               ))}
             </div>
           </div>
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "24px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap" as const, gap: "12px" }}>
+          <div className="ef-footer-bottom" style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "24px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap" as const, gap: "12px" }}>
             <p style={{ fontFamily: "var(--font-dm-mono)", fontSize: "10px", letterSpacing: "0.08em", color: "rgba(255,255,255,0.2)", margin: 0 }}>
               © 2026 Even Flow · evenflow.agency · Gold Coast, AU
             </p>

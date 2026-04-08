@@ -13,3 +13,120 @@ body {
   background: #FAFAF7;
   margin: 0;
 }
+
+/* ── Mobile responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav */
+  .ef-nav {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .ef-nav-cta {
+    display: none !important;
+  }
+
+  /* Hero heading */
+  .ef-hero-line {
+    font-size: clamp(48px, 10vw, 96px) !important;
+  }
+  .ef-handled-wrap {
+    height: auto !important;
+  }
+  .ef-handled {
+    font-size: clamp(52px, 11vw, 108px) !important;
+  }
+
+  /* Hero subtext */
+  .ef-hero-sub {
+    font-size: 16px !important;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  /* Hero CTA */
+  .ef-hero-cta {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Hero container */
+  .ef-hero-inner {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* How it works section */
+  .ef-section-how {
+    padding: 60px 0 80px !important;
+  }
+  .ef-section-inner {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* Section headings */
+  .ef-section-h2 {
+    font-size: 40px !important;
+  }
+  .ef-section-h2-sm {
+    font-size: 36px !important;
+  }
+
+  /* Accordion cards */
+  .ef-accordion-card {
+    padding: 20px 24px !important;
+  }
+
+  /* Stats grid */
+  .ef-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .ef-stat-value {
+    font-size: 40px !important;
+  }
+
+  /* Stats section */
+  .ef-section-stats {
+    padding-bottom: 60px !important;
+  }
+
+  /* Included section */
+  .ef-section-included {
+    padding-bottom: 60px !important;
+  }
+  .ef-included-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Book a call */
+  .ef-section-book {
+    padding-bottom: 80px !important;
+  }
+  .ef-book-h2 {
+    font-size: 40px !important;
+  }
+  .ef-book-cta {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Cal embed */
+  .ef-cal-card {
+    max-width: 100% !important;
+    border-radius: 8px !important;
+  }
+
+  /* Footer */
+  .ef-footer {
+    padding: 32px 24px !important;
+  }
+  .ef-footer-top {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+  }
+  .ef-footer-bottom {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
