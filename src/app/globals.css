@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --font-clash: "Clash Display", sans-serif;
+  --font-dm-mono: "DM Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FAFAF7;
+  margin: 0;
+}
